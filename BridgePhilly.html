@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bridges in Philly</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Bootstrap  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--Leaflet-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+  <!--Selectize-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/css/selectize.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/js/standalone/selectize.js"></script>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/leaflet.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h1 id = "head"></h1>
+      <p id = "intro"></p>
+      <p class = "description"></p>
+
+      <!--Selectize Dropdown menu-->
+      <section class="demo" id="demo-single-item-select">
+      					<div class="sandbox" >
+                  <label id = "select-page-head">Select page:</label>
+                  <select id="select-page">
+                    <div style="display: none; width: 520px; top: 36px; left: 0px; visibility: visible;">
+                    <option value="">Select a page...</option>
+        						<option class = "value" >Amtrak</option>
+        						<option class = "value" >SEPTA</option>
+        						<option class = "value" >I-95</option>
+        						<option class = "value" >Vine Street Expressway</option>
+                    <option class = "value" >Pedestrian Bridge</option>
+                    </div>
+                    </select>
+                    <div id = "select-page-head" >Current Page: <span id = "current-page"></span></div>
+      					</div>
+      				</section>
+
+      <!--Buttons  -->
+      <button class="previous">Previous</button>
+      <button class="next">Next</button>
+      <button class="reset">Reset</button>
+    </div>
+    <!-- Map -->
+    <div id="map" class="map"></div>
+    <!-- End HTML -->
+
+    <!-- Start Javascript Imports -->
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/selectize.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/basicApplication.js"></script>
+    <script src="js/main.js"></script>
+    <!-- End Javascript Imports -->
+
+  </div>
+
+</body>
+</html>
